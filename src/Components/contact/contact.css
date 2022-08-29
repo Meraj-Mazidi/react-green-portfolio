@@ -1,0 +1,233 @@
+.c {
+    height: 100vh;
+    position: relative;
+}
+
+.c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #59b256;
+    position: absolute;
+}
+
+.c-wrapper {
+    padding: 20px 50px 0 50px;
+    display: flex;
+}
+
+.c-left {
+    flex: 1;
+}
+
+.c-title {
+    font-size: 60px;
+    width: 80%;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    font-weight: 300;
+    width: 70%;
+}
+
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.c-desc {
+    font-weight: 200;
+}
+
+
+.c-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-style {
+    border: none;
+    border-bottom: 1px solid #59b256;
+    margin: 10px 0;
+    font-size: 14px;
+    padding-left: 10px;
+    outline: none;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.form-style:hover {
+    border-top: 1px solid #59b256;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.c-btn {
+    width: 40%;
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    border: 4px solid #59b256;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 10px;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.c-btn-text {
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.c-btn::before {
+    content: "";
+    background-color: #59b256;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 120%;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+
+}
+
+.c-btn:hover::before {
+    width: 99.8%;
+}
+
+
+.email-sent {
+    float: right;
+    text-align: center;
+    color: #59b256;
+}
+
+.story-text {
+    color: #59b256;
+}
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 480px) {
+
+    .c {
+        overflow-x: hidden;
+    }
+
+    .c-wrapper {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 50px;
+        text-align: center;
+    }
+
+    .c-title {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .c-info-item {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .c-desc {
+        display: none;
+    }
+
+    form {
+        margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form-style {
+        width: 75%;
+        margin-block: 10px;
+    }
+
+
+    .c-btn {
+        margin-top: 30px;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .c-wrapper {
+        flex-direction: column;
+        padding: 20px 5px 0 30px;
+        justify-content: center;
+    }
+
+    .c-desc {
+        display: none;
+    }
+
+    .c-info-item {
+        margin: 20px 0;
+    }
+
+    form {
+        margin-top: -5px;
+    }
+
+    .form-style {
+        width: 90%;
+    }
+
+    .c-btn {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 919px) {
+
+    .form-style {
+        width: 90%;
+    }
+
+    .c-right,
+    .c-left {
+        justify-content: flex-end;
+    }
+
+    .c-btn {
+        width: 90%;
+        font-size: 20px;
+        padding: 10px;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .c-wrapper {
+        padding-top: 10%;
+    }
+}

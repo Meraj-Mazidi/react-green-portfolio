@@ -1,0 +1,271 @@
+.intro {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-right {
+    flex: 1;
+    position: relative;
+}
+
+.i-left-wrapper {
+    padding: 50px;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.i-intro {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.i-name {
+    font-size: 60px;
+}
+
+.i-title {
+    height: 50px;
+    overflow: hidden;
+}
+
+.i-title-wrapper {
+    height: 100%;
+    animation: move 10s ease-in-out infinite alternate;
+}
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+
+    50% {
+        transform: translateY(-100px);
+    }
+
+    75% {
+        transform: translateY(-150px);
+    }
+
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.i-title-item {
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #54ef4f;
+    display: flex;
+    align-items: center;
+}
+
+.i-scroll {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.i-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.i-bg {
+    clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    background: linear-gradient(90deg, #26f71f 0%, #bfffc5 100%);
+    width: 110%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    animation: go-left 10s infinite alternate ease-in-out;
+}
+
+
+@keyframes go-left {
+    from {
+        right: -10%;
+    }
+
+    to {
+        right: 0;
+    }
+}
+
+.i-btn {
+    width: 50%;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 3px solid #54ef4f;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+.i-btn-text {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.i-btn::before {
+    content: "";
+    background-color: #54ef4f;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    transition: all 1s ease-in-out;
+    z-index: -1;
+}
+
+.i-btn:hover::before {
+    width: 100%;
+}
+
+
+
+/* RESPONSIVE STYLES */
+
+@media screen and (max-width: 480px) {
+
+    .intro {
+        flex-direction: column;
+        margin-bottom: 100px;
+        padding: 0;
+    }
+
+    .i-left-wrapper {
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .i-desc {
+        display: none;
+    }
+
+    .i-left {
+        margin-top: 15px;
+    }
+
+    .i-title-item {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .i-bg {
+        clip-path: none;
+        animation: none;
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 20px;
+        overflow: hidden;
+        animation: fade 5s infinite alternate ease-in-out;
+    }
+
+    @keyframes fade {
+        from {
+            transform: scale(1);
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+    .i-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .i-btn {
+        width: 100%;
+        margin-block: 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .i-btn {
+        width: 100%;
+
+    }
+
+    .i-bg {
+        animation: none;
+    }
+
+    .i-left-wrapper {
+        height: 80%;
+        gap: 0;
+    }
+
+    .i-title-wrapper {
+        width: 100%;
+    }
+
+    .i-title-item {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 919px) {
+
+    .intro {
+        overflow-x: hidden;
+    }
+
+    .i-btn {
+        width: 100%;
+    }
+
+    .i-bg {
+        animation: none;
+    }
+}
+
+
+
+/* NOTE TO SELF */
+/* Remember to add scrollEvent animation using that npm package */
+
+/* GOOD NIGHT, Have a good night of sleeping */
+/* SEE YOU TOMORROW, WITH FULL ENERGY! */
+/* REMEMBER THAT GOD IS ALWAYS WITH YOU BUDDY */
+/* DONT GET AFRAID OR SCARED OR TIRED, CUZ HE HAS GOT SOME BIG BIG PLANS FOR YOU & YOUR SWEET LITTLE CHILDREN */
+
+/* DO IT AT LEAST FOR THEM */
+/* YOU CAN DO IT, YOU'VE GOT WHAT IT TAKES */
