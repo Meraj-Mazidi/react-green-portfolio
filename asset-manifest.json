@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/react-green-portfolio/static/css/main.bbe1f58c.chunk.css",
+    "main.js": "/react-green-portfolio/static/js/main.a41f9e1c.chunk.js",
+    "main.js.map": "/react-green-portfolio/static/js/main.a41f9e1c.chunk.js.map",
+    "runtime-main.js": "/react-green-portfolio/static/js/runtime-main.182adb08.js",
+    "runtime-main.js.map": "/react-green-portfolio/static/js/runtime-main.182adb08.js.map",
+    "static/js/2.4f91f023.chunk.js": "/react-green-portfolio/static/js/2.4f91f023.chunk.js",
+    "static/js/2.4f91f023.chunk.js.map": "/react-green-portfolio/static/js/2.4f91f023.chunk.js.map",
+    "index.html": "/react-green-portfolio/index.html",
+    "static/css/main.bbe1f58c.chunk.css.map": "/react-green-portfolio/static/css/main.bbe1f58c.chunk.css.map",
+    "static/js/2.4f91f023.chunk.js.LICENSE.txt": "/react-green-portfolio/static/js/2.4f91f023.chunk.js.LICENSE.txt",
+    "static/media/address.a01cb8cc.png": "/react-green-portfolio/static/media/address.a01cb8cc.png",
+    "static/media/award.a796a64f.png": "/react-green-portfolio/static/media/award.a796a64f.png",
+    "static/media/email.a49e0158.png": "/react-green-portfolio/static/media/email.a49e0158.png",
+    "static/media/me.ed90bc21.png": "/react-green-portfolio/static/media/me.ed90bc21.png",
+    "static/media/me2.8182cc92.JPG": "/react-green-portfolio/static/media/me2.8182cc92.JPG",
+    "static/media/moon.3bea3d39.png": "/react-green-portfolio/static/media/moon.3bea3d39.png",
+    "static/media/phone.d90a6d23.png": "/react-green-portfolio/static/media/phone.d90a6d23.png",
+    "static/media/sun.f794832a.png": "/react-green-portfolio/static/media/sun.f794832a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.182adb08.js",
+    "static/js/2.4f91f023.chunk.js",
+    "static/css/main.bbe1f58c.chunk.css",
+    "static/js/main.a41f9e1c.chunk.js"
+  ]
+}
